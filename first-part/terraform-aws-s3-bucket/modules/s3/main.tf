@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "bd" {
         Environment = "${var.env}"
     }
     versioning {
-        enabled     = ${var.version}
+        enabled     = true
     }
     lifecycle_rule {
     id      = "${var.lifecycle_rule}"
@@ -19,12 +19,12 @@ resource "aws_s3_bucket" "bd" {
     }
 
     transition {
-      days          = ${var.transition}
+      days          = "${var.transition}"
       storage_class = "GLACIER"
     }
 
     expiration {
-      days = ${var.expiration}
+      days = "${var.expiration}"
       }
     }
 }

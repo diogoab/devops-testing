@@ -10,11 +10,7 @@ variable "acl" {
     default = "string"
 }
 
-variable "env" {
-    default = "string"
-}
-
-variable "version" {
+variable "environment" {
     default = "string"
 }
 
