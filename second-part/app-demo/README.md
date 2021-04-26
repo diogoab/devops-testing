@@ -21,5 +21,18 @@ $ helm lint app-demo
 
 ## For deploy
 ```
-helm install app-demo app-demo
+$ helm install app-demo app-demo
+```
+
+## View release
+```
+$ helm list
+```
+## Update release
+```
+$ helm upgrade app-demo app-demo
+```
+## delete release
+```
+$ helm delete app-demo
 ```

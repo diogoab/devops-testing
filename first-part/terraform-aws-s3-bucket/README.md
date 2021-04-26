@@ -23,6 +23,12 @@ $ terraform apply
 
 ```
 
+## View Bucket S3 provisioning 
+
+```
+$ terraform show
+```
+
 ## For delete use
 
 ```

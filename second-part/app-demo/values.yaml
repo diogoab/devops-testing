@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: rahulwagh17/kubernetes:jhooq-k8s-springboot
+  repository: rahulwagh17/kubernetes
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: "jhooq-k8s-springboot"
 
 imagePullSecrets: []
 nameOverride: ""
